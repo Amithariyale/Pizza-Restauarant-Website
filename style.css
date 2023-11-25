@@ -19,6 +19,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     background-color: black;
     position: sticky;
     top: 0px;
@@ -39,6 +40,7 @@ a {
     width: 50%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     font-size: 24px;
 }
 
@@ -46,6 +48,7 @@ a {
     width: 15%;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     font-size: 25px;
 }
 
@@ -55,9 +58,7 @@ a {
     background-size: cover;
     height: 50vw;
     padding: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    
 }
 
 #hero-container>h1 {
@@ -79,7 +80,7 @@ a {
 }
 
 #hero-container>p {
-    width: 550px;
+    width: 40%;
 }
 
 #about_us,
@@ -134,4 +135,25 @@ h3 {
 
 .gallery_img {
     margin-bottom: 10px;
+}
+
+@media screen and (max-width:1300px) {
+    #hero-container>h1{
+        font-size: 50px;
+    }
+    .p-text{
+        font-size: 20px;
+    }
+    
+}
+
+@media screen and (max-width:900px) {
+    #hero-container>h1{
+        font-size: 30px;
+
+    }
+    .p-text{
+        font-size: 15px;
+    }
+    
 }
